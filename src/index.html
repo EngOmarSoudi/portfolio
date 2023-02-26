@@ -4,42 +4,31 @@
     <title>Tailwind CSS</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <!-- <div class="container flex mx-auto bg-blue-500"> -->
-    
-    <!-- </div> -->
+  <body class="box-border">
+    <div class="head bg-white shadow-cos relative flex">
+      <div
+        class="container px-4 mx-auto flex justify-between items-center flex-wrap relative"
+      >
+        <a
+          href=""
+          class="text-main-co text-2xl font-bold h-18 flex justify-center items-center"
+          >Logo</a
+        >
+        <ul class="mainnav list-none p-0 m-0 flex">
+          <li class="">
+            <a href="#article">Article</a>
+          </li>
+          <li>
+            <a href="#gallery"> Gallery</a>
+          </li>
+          <li>
+            <a href="#features"> Features</a>
+          </li>
+          <li>
+            <a href="#"> Others Links</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
-<script>
-  const dropdownToggle = document.querySelectorAll("[data-dropdown-toggle]");
-  const dropdown = document.querySelectorAll("[data-dropdown]");
-  const dropdownClose = document.querySelectorAll("[data-dropdown-close]");
-
-  dropdownToggle.forEach((toggle) => {
-    toggle.addEventListener("click", () => {
-      const dropdownId = toggle.getAttribute("data-dropdown-toggle");
-      const dropdown = document.getElementById(dropdownId);
-      dropdown.classList.toggle("hidden");
-    });
-  });
-
-  dropdownClose.forEach((close) => {
-    close.addEventListener("click", () => {
-      const dropdownId = close.getAttribute("data-dropdown-close");
-      const dropdown = document.getElementById(dropdownId);
-      dropdown.classList.add("hidden");
-    });
-  });
-
-  document.addEventListener("click", (e) => {
-    const target = e.target;
-    const dropdown = target.closest("[data-dropdown]");
-    const dropdownToggle = target.closest("[data-dropdown-toggle]");
-
-    if (!dropdown && !dropdownToggle) {
-      dropdowns.forEach((dropdown) => {
-        dropdown.classList.add("hidden");
-      });
-    }
-  });
-</script>
