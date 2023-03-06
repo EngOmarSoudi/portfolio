@@ -23,3 +23,12 @@
 /* a{
     text-decoration: none;
   } */
+
+html{
+  scroll-behavior: smooth;
+}
+
+.al{
+  color:blue;
+  background-color: rgb(201, 26, 26);
+}
