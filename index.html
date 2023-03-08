@@ -4,6 +4,11 @@
     <title>Tailwind CSS</title>
     <link rel="stylesheet" href="src/main.css" />
     <style>
+      *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
       html{
         scroll-behavior: smooth;
       }
@@ -14,6 +19,9 @@
         list-style: none;
         margin: 0;
         padding: 0;
+      }
+      a{
+        text-decoration: none;
       }
       .container1{
         padding-left: 15px;
@@ -38,17 +46,18 @@
         }}
     </style>
   </head>
-  <body class="box-border">
-   
+  <body class="head ">
+    <div>
       <div
-        class="container1 px-4 mx-auto flex justify-between items-center flex-wrap relative"
+        class=" container1 px-4 mx-auto flex justify-between items-center flex-wrap relative "
       >
+      <!---->
         <a
           href=""
           class="text-main-co text-2xl font-bold h-18 flex justify-center items-center"
           >Logo</a
         >
-        <ul class="mainnav list-none p-0 m-0 flex">
+        <ul class="main-nav list-none p-0 m-0 flex">
           <li class="flex">
             <a
               class=" flex justify-center items-center h-18 relative text-black px-8 duration-500 no-underline before:content-[''] before:absolute before:w-full before:h-1 before:bg-main-co before:top-0 before:-left-full hover:text-main-co hover:bg-fe before:duration-500 hover:before:left-0 overflow-hidden "
@@ -82,6 +91,9 @@
           </li>
         </ul>
       </div>
+    </div>
+   
+      
                                                 
   </body>
 </html>
