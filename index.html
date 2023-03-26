@@ -3,29 +3,77 @@
   <head>
     <title>Tailwind CSS</title>
     <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="src/normalize.css" />
+    <link rel="stylesheet" href="src/all.min.css" />
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .container1{
+        padding-left:15px ;
+        padding-right:15px ;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 768px) {
+        .container1{
+          width: 750px;
+        }
+      } 
+      @media (max-width: 992px) {
+        .container1{
+          width: 970px;
+        }
+      }
+      @media (max-width: 1200px) {
+        .container1{
+          width: 1170px;
+        }
+      }
+
+    </style>
   </head>
-  <body class="box-border">
-    <div class="head bg-white shadow-cos relative flex">
+  <body>
+    <div class="heading bg-white shadow-cos relative">
       <div
-        class="container px-4 mx-auto flex justify-between items-center flex-wrap relative"
+        class="container1 flex justify-between items-center flex-wrap px-4 mx-auto relative "
       >
         <a
           href=""
-          class="text-main-co text-2xl font-bold h-18 flex justify-center items-center"
+          class="md:w-full sm:w-full text-main-co text-2xl font-bold h-18 flex justify-center items-center"
           >Logo</a
         >
-        <ul class="mainnav list-none p-0 m-0 flex">
+        <ul class="mainnav list-none flex sm:m-auto md:m-auto">
           <li class="">
-            <a href="#article">Article</a>
+            <a
+              class="sm:p-3 sm:text-sm sm:h-10 md:p-3 md:text-sm md:h-10 before:content-[''] before:absolute before:w-full before:h-1 before:bg-main-co before:top-0 before:-left-full hover:text-main-co hover:bg-fe before:duration-500 hover:before:left-0 overflow-hidden flex justify-center items-center h-18 relative text-black px-8 duration-500 no-underline"
+              href="#article"
+              >Article</a
+            >
+          </li class="">
+          <li>
+            <a
+            class="sm:p-3 sm:text-sm sm:h-10 md:p-3 md:text-sm md:h-10 before:content-[''] before:absolute before:w-full before:h-1 before:bg-main-co before:top-0 before:-left-full hover:text-main-co hover:bg-fe before:duration-500 hover:before:left-0 overflow-hidden flex justify-center items-center h-18 relative text-black px-8 duration-500 no-underline"
+            href="#gallery"
+            >
+              Gallery</a
+            >
           </li>
           <li>
-            <a href="#gallery"> Gallery</a>
+            <a
+            class="sm:p-3 sm:text-sm sm:h-10 md:p-3 md:text-sm md:h-10 before:content-[''] before:absolute before:w-full before:h-1 before:bg-main-co before:top-0 before:-left-full hover:text-main-co hover:bg-fe before:duration-500 hover:before:left-0 overflow-hidden flex justify-center items-center h-18 relative text-black px-8 duration-500 no-underline"
+            href="#features"
+            >
+              Features</a
+            >
           </li>
           <li>
-            <a href="#features"> Features</a>
-          </li>
-          <li>
-            <a href="#"> Others Links</a>
+            <a
+            class="sm:p-3 sm:text-sm sm:h-10 md:p-3 md:text-sm md:h-10 before:content-[''] before:absolute before:w-full before:h-1 before:bg-main-co before:top-0 before:-left-full hover:text-main-co hover:bg-fe before:duration-500 hover:before:left-0 overflow-hidden flex justify-center items-center h-18 relative text-black px-8 duration-500 no-underline"
+            href="#"
+            >
+              Others Links</a
+            >
           </li>
         </ul>
       </div>
